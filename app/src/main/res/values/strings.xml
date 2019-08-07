@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="action_search">Search</string>
+    <string name="tv_synopsis_label_movie_detail">Overview</string>
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</string>
+    <string name="tv_release_date_label_movie_detail">Release date</string>
+    <string name="tv_empty_search">Countn\'t find movies with this query</string>
+    <string name="tv_empty_upcoming">Couldn\'t find the upcoming movies</string>
+    <string name="tv_genres_label_movie_detail">Genre</string>
+    <string name="err_no_connection">Check your connection and try again</string>
+    <string name="err_general_message">An error occurred, please try again later</string>
+    <string name="err_genre_no_connection">Couldn\'t find genres, check your connection and try again</string>
+    <string name="err_genre_general_message">Couldn\'t find genres, try again later</string>
+    <string name="tv_offline_warning">You are offline and seeing stored movies from previous searches</string>
+</resources>
