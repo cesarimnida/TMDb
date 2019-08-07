@@ -3,7 +3,9 @@ Aplicativo Android feito em Kotlin para mostrar os próximos lançamentos e busc
 
 ## Utilização
 Para utilizar, é importante configurar a sua API key do TMDb no gradle.properties do seu computador. Para isso, adicione a seguinte linha no seu gradle.properties:
+
 TMDB_API_KEY = "sua_api_aqui"
+
 Sem a API key configurada não será possível fazer chamadas.
 
 ## Bibliotecas utilizadas
@@ -17,7 +19,9 @@ Foram utilizadas as seguintes bibliotecas neste projeto:
 
 ## Funcionalidades
 Foi utilizado o Rx para encadear chamadas tanto dentro do Room quanto na API. No caso dos lançamentos, é feita uma busca inicial na API, caso ela falhe por qualquer problema, será disparada uma chamada ao Room para tentar buscar os últimos lançamentos que foram baixados com sucesso pela API. Toda vez que ele faz uma chamada inicial com sucesso ele apaga todos os filmes guardados no banco e adiciona os novos no lugar. Quando uma chamada de paginação é feita com sucesso, ele apenas adiciona os resultados no banco.
+
 O processo inverso foi usado na tela de detalhes para buscar os gêneros. Como a API não retorna os nomes dos gêneros de filmes, retornando apenas os ids, foi necessário buscar na API de gêneros todos os existentes. Para isso, primeiro é feita uma busca no Room para retornar todos os gêneros existentes. Se nenhum for retornado, uma chamada é feita na API para buscar todos os possíveis gêneros. Quando a chamada é feita com sucesso, os gêneros são salvos no Room e nunca mais são buscados novamente na API. Caso algum erro ocorra, a informação de gêneros do filme ficará em branco.
+
 Para a busca foi utilizado um SearchView onde a query pode ser digitada. Ao confirmar a busca pelo teclado, a chamada na API é feita.
 Foram feitos para todos os casos tratamentos de erros de conexão e erros generalizados. Para os lançamentos e a busca, foi utilizado scroll infinito com paginação no RecyclerView. Mensagens de lista vazia foram criados para os casos de ser a primeira vez que o app é aberto e nenhum lançamento foi salvo ainda e para casos em que a query não retorna nenhum filme na busca.
 
