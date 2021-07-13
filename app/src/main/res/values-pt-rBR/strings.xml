@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TMDB</string>
+    <string name="action_search">Buscar</string>
+    <string name="tv_empty_search">Não foi possível encontrar filmes com esta busca</string>
+    <string name="tv_empty_upcoming">Não foi possível encontrar os próximos filmes</string>
+    <string name="tv_genres_label_movie_detail">Gênero</string>
+    <string name="tv_release_date_label_movie_detail">Data de lançamento</string>
+    <string name="tv_synopsis_label_movie_detail">Sinopse</string>
+    <string name="err_general_message">Um erro ocorreu, tente novamente mais tarde</string>
+    <string name="err_genre_general_message">Não foi possível encontrar gêneros, tente novamente mais tarde</string>
+    <string name="err_genre_no_connection">Não foi possível encontrar gêneros, verifique sua conexão e tente novamente mais tarde</string>
+    <string name="err_no_connection">Verifique sua conexão e tente novamente mais tarde</string>
+    <string name="tv_offline_warning">Você está offline e vendo filmes guardados de buscas anteriores</string>
+</resources>

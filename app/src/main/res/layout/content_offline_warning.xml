@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="8dp">
+
+    <TextView
+        android:id="@+id/tv_offline_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_signal_wifi_off_black_24dp"
+        android:drawablePadding="8dp"
+        android:text="@string/tv_offline_warning" />
+</androidx.cardview.widget.CardView>
